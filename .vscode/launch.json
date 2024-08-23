@@ -13,9 +13,24 @@
       "args": [
         "-u",
         "http://google.com",
-        "3",
-        "10",
+        "-c",
+        "5",
         "-r",
+        "10"
+      ]
+    },
+    {
+      "name": "stress2",
+      "type": "go",
+      "request": "launch",
+      "mode": "auto",
+      "program": "${workspaceRoot}",
+      "args": [
+        "--url",
+        "http://google.com",
+        "--concurrency",
+        "5",
+        "--requests",
         "10"
       ]
     }
