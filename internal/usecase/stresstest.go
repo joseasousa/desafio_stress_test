@@ -25,7 +25,7 @@ func (u stressTest) Execute(config domain.Config) (resp domain.Response) {
 	jobs := make(chan string, config.Concurrency)
 	results := make(chan domain.Response, config.TotalRequests)
 	wg := &sync.WaitGroup{}
-	wg.Add(config.Concurrency)
+	wg.Add(config.TotalRequests)
 
 	for w := 1; w <= config.Concurrency; w++ {
 		go worker(jobs, results)
