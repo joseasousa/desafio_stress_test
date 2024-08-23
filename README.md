@@ -48,7 +48,7 @@ go build -o stester ./cmd/stester
 Passo 2:
 
 ```bash
-./stester --url=http://google.com --requests=10 --concurrency=5
+./stester --url=http://google.com --requests=10 --concurrency=10
 ```
 
 
@@ -63,5 +63,5 @@ docker build -t stress-test .
 Passo 2:
 
 ```bash
-docker run stress-test --url=http://google.com --requests=10 --concurrency=5
+docker run stress-test --url=http://google.com --requests=10 --concurrency=10
 ```

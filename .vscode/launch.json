@@ -31,7 +31,7 @@
         "--concurrency",
         "5",
         "--requests",
-        "10"
+        "5"
       ]
     }
   ]
